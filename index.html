@@ -3,14 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylesheet.css">
     <script src="final.js" defer></script>
     <title>Document</title>
 </head>
 <body>
-    <input type="text" id="taskName">
-    <input type="submit" id="submitBtn">
+    <h1>Task Manager (aka 20% of my grade :)</h1>
+        <input type="text" id="taskName">
+    <select id="list">
+        <option value="High">High</option>
+        <option value="Low">Low</option>
+        <option value="Middle" selected>Medium</option>
+    </select>
     <input type="checkbox" id="checkedbox">
-    <input type="button" id="deleteButton">
+    <label for="checkedbox">Important</label>
+    <button type="submit" id="submitBtn">
+        <label for="submitBtn">Add task</label>
+
     <div id="taskManager"></div>
 </body>
 </html>

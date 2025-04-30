@@ -1,22 +1,23 @@
 const outputDiv = document.getElementById("taskManager")
 let MyTask = document.createElement("taskName")
+console.log(MyTask)
 let MySubmitBtn = document.getElementById("submitBtn")
 let Checkedbox = document.getElementById("checkedbox")
 let Importance = document.getElementById("list")
+//console.log(Importance.ariaValueText)
 let i = 0
 let taskList = []
-function taskCreater(b,c,x,y,z) {
+MySubmitBtn.addEventListener("click",function createTask(Name,priority,Completiton,Importance) {
     i++
     let newTask = {
         id:i,
-        name:this.b,
-        priority:this.c,
-        isCompleted:this.x,
-        isImportant:this.y,
-        date:this.z,
+        name:Name,
+        priority:priority,
+        isCompleted:Completiton,
+        isImportant:Importance,
+        date: new Date,
     }
-    //newTask()
-    console.log(newTask)
-}
-taskCreater(1,2,3,4,5)
-taskCreater(1,2,3,4,5)
+    taskList.push(newTask)
+    console.log(JSON.stringify(newTask))
+})
+outputDiv.innerHTML += 
