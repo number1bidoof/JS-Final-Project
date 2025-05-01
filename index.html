@@ -4,22 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css">
-    <script src="final.js" defer></script>
+    <script src="moretesting.js" defer></script>
     <title>Document</title>
 </head>
 <body>
-    <h1>Task Manager (aka 20% of my grade :)</h1>
-        <input type="text" id="taskName">
-    <select id="list">
+    <h1>Interactive Task Manager (aka 20% of my grade :)</h1>
+    <input id="taskName" type="text" placeholder="Enter task name" />
+    
+    <select id="dropdown">
         <option value="High">High</option>
+        <option value="Medium">Medium</option>
         <option value="Low">Low</option>
-        <option value="Middle" selected>Medium</option>
     </select>
-    <input type="checkbox" id="checkedbox">
-    <label for="checkedbox">Important</label>
-    <button type="submit" id="submitBtn">
-        <label for="submitBtn">Add task</label>
-
+    
+    <label>
+        <input type="checkbox" id="checkedbox" /> Important
+    </label>
+    
+    <button id="submitBtn" type="button">Add Task</button>
     <div id="taskManager"></div>
 </body>
 </html>
