@@ -1,6 +1,5 @@
 const outputDiv = document.getElementById("taskManager")
 let MyTask = document.createElement("taskName")
-console.log(MyTask)
 let MySubmitBtn = document.getElementById("submitBtn")
 let Checkedbox = document.getElementById("checkedbox")
 let Importance = document.getElementById("list")
